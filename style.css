@@ -46,12 +46,24 @@ ul
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  margin-bottom: 0px;
+  
+}
+
+.blockItem 
+{
+	background-color: black;
+	margin: 0px;
+	padding: 3px;
+	
+	
 }
 
 
 img 
 {
 	display: block;
+	height: auto;
 }
 
 p 
@@ -74,6 +86,35 @@ p a
 	color:#ff9500;
 }
 
+.row {
+  display: flex;
+	
+}
+
+.column {
+  display: block;
+  margin-left: 0 auto;
+  text-align: center;
+}
+
+#columnL {
+  display: block;
+  margin-left: 46.9%;
+  margin-right: 20px;
+  padding-bottom: 2%;
+  padding-top: 1%;
+}
+#columnR {
+  display: block;
+  margin-left: 20px;
+  padding-bottom: 2%;
+  padding-top: 1%;
+}
+.icon
+{
+
+}
+
 #bannerItem 
 {
 	float: left;
@@ -89,6 +130,16 @@ p a
 	font-size: 2vw;
 	
 }
+
+footer
+{
+	background-color: black;
+	border-top: 4px solid white;
+	margin: 0px;
+	text-align: center;
+	width: 100%;
+}
+
 @media screen and (min-width: 701px) {
 	#textBack{
 		font-size:2vw;
@@ -97,10 +148,44 @@ p a
 	{
 		top: 40%;
 	}
+	
+
 }
 
 @media screen and (max-width: 700px) {
   #textBack {
     font-size: 3vw;
   }
+  
+}
+
+@media screen and (max-width: 420px) {
+	.centered
+	{
+		transform: translate(-50%, -135%);
+	}
+	p
+	{
+		padding: 12vw;
+		font-size: 1.7em;
+	}
+	#columnL
+	{
+		margin-left: 37%;
+	}
+	
+	#textBack
+	{
+		font-size: 3.5vw;
+	}
+	#backImage
+	{
+		height: 100vh;
+	
+	}	
+	#bannerItem
+	{
+		margin-right: 45%;
+	}
+
 }
